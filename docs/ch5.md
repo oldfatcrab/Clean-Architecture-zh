@@ -434,29 +434,36 @@ What is OO? There are many opinions and many answers to this question. To the so
 ---
 
 #### ¹ The C++ compiler needs to know the size of the instances of each class.
+[¹]:#%E2%81%B1-the-c-compiler-needs-to-know-the-size-of-the-instances-of-each-class
 
 > C++ 编译器需要知道不同类的实例需要占用的空间。
 
 #### ² For example, Smalltalk, Python, JavaScript, Lua, and Ruby.
+[²]:#%E2%81%B2-for-example-smalltalk-python-javascript-lua-and-ruby
 
 > 比如说：Smalltalk, Python, JavaScript, Lua, and Ruby。
 
 #### ³ Not just C programmers: Most languages of that era had the capability to masquerade one data structure as another
+[³]:#%E2%81%B3-not-just-c-programmers-most-languages-of-that-era-had-the-capability-to-masquerade-one-data-structure-as-another
 
 > 其实不光是 C 程序员：那个时代的大多数语言都能够将一种数据结构伪装成另一种数据结构。
 
 #### ⁴ Indeed it still is.
+[⁴]:#%E2%81%B4-indeed-it-still-is
 
 > 而且现在也很常见。
 
 #### ⁵ UNIX system vary; this is just an example
+[⁵]:#%E2%81%B5-unix-system-vary-this-is-just-an-example
 
 > 每个 UNIX 系统不尽相同，这里只是举个例子。
 
 #### ⁶ Punched cards - IBM Hollerith cards, 80 columns wide. I'm sure many of you have never even seen one of these, but they were commonplace in the 1950s, 1960s, and even 1970s.
+[⁶]:#%E2%81%B6-punched-cards---ibm-hollerith-cards-80-columns-wide-im-sure-many-of-you-have-never-even-seen-one-of-these-but-they-were-commonplace-in-the-1950s-1960s-and-even-1970s
 
 > 一种叫 IBM Hollerith 的卡片，80 列宽。我敢说你们中的许多人没有见过这种东西，但是它们在 20 世纪 50、60 甚至 70 年代很常见。
 
 #### ⁷ Albeit indirectly.
+[⁷]:#%E2%81%B7-albeit-indirectly
 
 > 尽管这是间接的。
