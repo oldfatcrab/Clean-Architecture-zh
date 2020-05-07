@@ -77,9 +77,9 @@ But then came OO in the form of C++ - and the perfect encapsulation of C was bro
 
 > 而 C++ 作为一种面向对象编程语言，反而破坏了 C 的完美封装性。
 
-The C++ compiler, for technical reasons,[¹](#%C2%B9-the-c-compiler-needs-to-know-the-size-of-the-instances-of-each-class) needed the member variables of a class to be declared in the header file of that class. So our `Point` program changed to look like this:
+The C++ compiler, for technical reasons,[<sup>1</sup>](#footnote-1) needed the member variables of a class to be declared in the header file of that class. So our `Point` program changed to look like this:
 
-> 由于一些技术原因[¹](#%C2%B9-the-c-compiler-needs-to-know-the-size-of-the-instances-of-each-class)[¹](#%C2%B9-the-c-compiler-needs-to-know-the-size-of-the-instances-of-each-class)，C++编译器要求类的成员变量必须在该类的头文件中声明。这样一来，我们的 `point.h` 程序随之就改成了这样：
+> 由于一些技术原因[<sup>1</sup>](#footnote-1)，C++编译器要求类的成员变量必须在该类的头文件中声明。这样一来，我们的 `point.h` 程序随之就改成了这样：
 
 point.h
 
@@ -124,9 +124,9 @@ Java and C# simply abolished the header/implementation split altogether, thereby
 
 > 而 Java 和 C# 则彻底抛弃了头文件与实现文件分离的编程方式，这其实进一步削弱了封装性。因为在这些语言中，我们是无法区分一个类的声明和定义的。
 
-For these reasons, it is difficult to accept that OO depends on strong encapsulation. Indeed, many OO languages[²](#%C2%B2-for-example-smalltalk-python-javascript-lua-and-ruby) have little or no enforced encapsulation.
+For these reasons, it is difficult to accept that OO depends on strong encapsulation. Indeed, many OO languages[<sup>2</sup>](#footnote-2) have little or no enforced encapsulation.
 
-> 由于上述原因，我们很难说强封装是面向对象编程的必要条件。而事实上，有很多面向对象编程语言[²](#%C2%B2-for-example-smalltalk-python-javascript-lua-and-ruby)对封装性并没有强制性的要求。
+> 由于上述原因，我们很难说强封装是面向对象编程的必要条件。而事实上，有很多面向对象编程语言[<sup>2</sup>](#footnote-2)对封装性并没有强制性的要求。
 
 OO certainly does depend on the idea that programmers are well-behaved enough to not circumvent encapsulated data. Even so, the languages that claim to provide OO have only weakened the once perfect encapsulation we enjoyed with C.
 
@@ -138,9 +138,9 @@ If OO languages did not give us better encapsulation, then they certainly gave u
 
 > 既然面向对象编程语言并没有提供更好的封装性，那么在继承性方面又如何呢？
 
-Well - sort of. Inheritance is simply the redeclaration of a group of variables and functions within an enclosing scope. This is something C programmers[³](#%C2%B3-not-just-c-programmers-most-languages-of-that-era-had-the-capability-to-masquerade-one-data-structure-as-another) were able to do manually long before there was an OO language.
+Well - sort of. Inheritance is simply the redeclaration of a group of variables and functions within an enclosing scope. This is something C programmers[<sup>3</sup>](#footnote-3) were able to do manually long before there was an OO language.
 
-> 嗯，其实也就一般般吧。简而言之，继承的主要作用是让我们可以在某个作用域内对外部定义的某一组变量与函数进行覆盖。这事实上也是 C 程序员早在面向对象编程语言发明之前就一直在做的事了[³](#%C2%B3-not-just-c-programmers-most-languages-of-that-era-had-the-capability-to-masquerade-one-data-structure-as-another)。
+> 嗯，其实也就一般般吧。简而言之，继承的主要作用是让我们可以在某个作用域内对外部定义的某一组变量与函数进行覆盖。这事实上也是 C 程序员早在面向对象编程语言发明之前就一直在做的事了[<sup>3</sup>](#footnote-3)。
 
 Consider this addition to our original `point.h` C program:
 
@@ -205,9 +205,9 @@ If you look carefully at the `main` program, you’ll see that the `NamedPoint` 
 
 > 请仔细观察 `main` 函数，这里 `NamedPoint` 数据结构是被当作 `Point` 数据结构的一个衍生体來使用的。之所以可以这样做，是因为 `NamedPoint` 结构体的前两个成员的顺用与 `Point` 结构休的完全一致。简单来说，`NamedPoint` 之所以可以被伪装成 `Point` 来使用，是因为 `NamedPoint` 是 `Point` 结构体的一个超集，同两者共同成员的顺序也是一样的。
 
-This kind of trickery was a common practice[⁴](#%E2%81%B4-indeed-it-still-is) of programmers prior to the advent of OO. In fact, such trickery is how C++ implements single inheritance.
+This kind of trickery was a common practice[<sup>4</sup>](#footnote-4) of programmers prior to the advent of OO. In fact, such trickery is how C++ implements single inheritance.
 
-> 上面这种编程方式虽然看上去有些投机取巧，但是在面向对象理论被提出之前，这已经很常见了[⁴](#%E2%81%B4-indeed-it-still-is)。其实，C++内部就是这样实现单继承的。
+> 上面这种编程方式虽然看上去有些投机取巧，但是在面向对象理论被提出之前，这已经很常见了[<sup>4</sup>](#footnote-4)。其实，C++内部就是这样实现单继承的。
 
 Thus we might say that we had a kind of inheritance long before OO languages were invented. That statement wouldn’t quite be true, though. We had a trick, but it’s not nearly as convenient as true inheritance. Moreover, multiple inheritance is a considerably more difficult to achieve by such trickery.
 
@@ -253,9 +253,9 @@ It’s as though `STDIN` and `STDOUT` are Java-style interfaces that have implem
 
 > 这里的 `STDIN` 和 `STDOUT` 与 Java 中的接口类似，各种设备都有各自的实现。当然，这个 C 程序中是没有接口这个概念的，那么 `getchar()` 这个调用的动作是 如何真正传递到设备驱动程序中，从而读取到具体内容的呢？
 
-The answer to that question is pretty straightforward. The UNIX operating system requires that every IO device driver provide five standard functions:[⁵](#%E2%81%B5-unix-system-vary-this-is-just-an-example) `open`, `close`, `read`, `write`, and `seek`. The signatures of those functions must be identical for every IO driver.
+The answer to that question is pretty straightforward. The UNIX operating system requires that every IO device driver provide five standard functions:[<sup>5</sup>](#footnote-5) `open`, `close`, `read`, `write`, and `seek`. The signatures of those functions must be identical for every IO driver.
 
-> 其实很简单，UNIX 操作系统强制要求每个 IO 设备都要提供 `open`、`close`、`read`、`write` 和 `seek` 这 5 个标准函数[⁵](#%E2%81%B5-unix-system-vary-this-is-just-an-example)。也就是说，每个 IO 设备驱动程序对这 5 种函数的实现在函数调用上必须保持一致。
+> 其实很简单，UNIX 操作系统强制要求每个 IO 设备都要提供 `open`、`close`、`read`、`write` 和 `seek` 这 5 个标准函数[<sup>5</sup>](#footnote-5)。也就是说，每个 IO 设备驱动程序对这 5 种函数的实现在函数调用上必须保持一致。
 
 The `FILE` data structure contains five pointers to functions. In our example, it might look like this:
 
@@ -341,9 +341,9 @@ Why did the UNIX operating system make IO devices plugins? Because we learned, i
 
 > 为什么 UNIX 操作系统会将 IO 设备设计成插件形式呢？因为自 20 世纪 50 年代末期以来，我们学到了一个重要经验：程序应该与设备无关。这个经验从何而来呢？因为一度所有程序都是设备相关的，但是后来我们发现自己其实真正需要的是在不同的设备上实现同样的功能。
 
-For example, we often wrote programs that read input data from decks of cards,[⁶](#%E2%81%B6-punched-cards-ibm-hollerith-cards-80-columns-wide-i-m-sure-many-of-you-have-never-even-seen-one-of-these-but-they-were-commonplace-in-the-1950s-1960s-and-even-1970s) and then punched new decks of cards as output. Later, our customers stopped giving us decks of cards and started giving us reels of magnetic tape. This was very inconvenient, because it meant rewriting large portions of the original program. It would be very convenient if the same program worked interchangeably with cards or tape.
+For example, we often wrote programs that read input data from decks of cards,[<sup>6</sup>](#footnote-6) and then punched new decks of cards as output. Later, our customers stopped giving us decks of cards and started giving us reels of magnetic tape. This was very inconvenient, because it meant rewriting large portions of the original program. It would be very convenient if the same program worked interchangeably with cards or tape.
 
-> 例如，我们曾经写过一些程序，需要从卡片盒中的打孔卡片读取数据，同时要通过在新的卡片上打孔来输出数据。后来，客户不再使用打孔卡片，而开始使用磁带卷了。这就给我们带来了很多麻烦，很多程序都需要重写。于是我们就会想，如果这段程序可以同时操作打孔卡片和磁带那该多好。
+> 例如，我们曾经写过一些程序，需要从卡片盒中的打孔卡片[<sup>6</sup>](#footnote-6)读取数据，同时要通过在新的卡片上打孔来输出数据。后来，客户不再使用打孔卡片，而开始使用磁带卷了。这就给我们带来了很多麻烦，很多程序都需要重写。于是我们就会想，如果这段程序可以同时操作打孔卡片和磁带那该多好。
 
 The plugin architecture was invented to support this kind of IO device independence, and has been implemented in almost every operating system since its introduction. Even so, most programmers did not extend the idea to their own programs, because using pointers to functions was dangerous.
 
@@ -375,9 +375,9 @@ When polymorphism is brought into play, however, something very different can ha
 
 <Figures figure="5-2">Dependency inversion</Figures>
 
-In Figure 5.2, module `HL1` calls the `F()` function in module ``ML1``. The fact that it calls this function through an interface is a source code contrivance. At runtime, the interface doesn’t exist. `HL1` simply calls `F()` within ``ML1``.[⁷](#%E2%81%B7-albeit-indirectly)
+In Figure 5.2, module `HL1` calls the `F()` function in module ``ML1``. The fact that it calls this function through an interface is a source code contrivance. At runtime, the interface doesn’t exist. `HL1` simply calls `F()` within ``ML1``.[<sup>7</sup>](#footnote-7)
 
-> 在图 5.2 中，模块 `HL1` 调用了 `ML1` 模块中的 `F()` 函数，这里的调用是通过源代码级别的接口来实现的。当然在程序实际运行时，接口这个概念是不存在的，`HL1` 会调用 `ML1` 中的 `F()` 函数。
+> 在图 5.2 中，模块 `HL1` 调用了 `ML1` 模块中的 `F()` 函数，这里的调用是通过源代码级别的接口来实现的。当然在程序实际运行时，接口这个概念是不存在的，`HL1` 会调用 `ML1` 中的 `F()` 函数。[<sup>7</sup>](#footnote-7)
 
 Note, however, that the source code dependency (the inheritance relationship) between `ML1` and the interface `I` points in the opposite direction compared to the flow of control. This is called dependency inversion, and its implications for the software architect are profound.
 
@@ -433,30 +433,30 @@ What is OO? There are many opinions and many answers to this question. To the so
 
 ---
 
-#### ¹ The C++ compiler needs to know the size of the instances of each class.
+#### <sup>1</sup><a name="footnote-1"></a> The C++ compiler needs to know the size of the instances of each class.
 
 > C++ 编译器需要知道不同类的实例需要占用的空间。
 
-#### ² For example, Smalltalk, Python, JavaScript, Lua, and Ruby.
+#### <sup>2</sup><a name="footnote-2"></a> For example, Smalltalk, Python, JavaScript, Lua, and Ruby.
 
-> 比如说：Smalltalk, Python, JavaScript, Lua, and Ruby。
+> 比如说：Smalltalk、Python、JavaScript、Lua 和 Ruby。
 
-#### ³ Not just C programmers: Most languages of that era had the capability to masquerade one data structure as another
+#### <sup>3</sup><a name="footnote-3"></a> Not just C programmers: Most languages of that era had the capability to masquerade one data structure as another
 
 > 其实不光是 C 程序员：那个时代的大多数语言都能够将一种数据结构伪装成另一种数据结构。
 
-#### ⁴ Indeed it still is.
+#### <sup>4</sup><a name="footnote-4"></a> Indeed it still is.
 
 > 而且现在也很常见。
 
-#### ⁵ UNIX system vary; this is just an example
+#### <sup>5</sup><a name="footnote-5"></a> UNIX system vary; this is just an example
 
 > 每个 UNIX 系统不尽相同，这里只是举个例子。
 
-#### ⁶ Punched cards - IBM Hollerith cards, 80 columns wide. I'm sure many of you have never even seen one of these, but they were commonplace in the 1950s, 1960s, and even 1970s.
+#### <sup>6</sup><a name="footnote-6"></a> Punched cards - IBM Hollerith cards, 80 columns wide. I'm sure many of you have never even seen one of these, but they were commonplace in the 1950s, 1960s, and even 1970s.
 
 > 一种叫 IBM Hollerith 的卡片，80 列宽。我敢说你们中的许多人没有见过这种东西，但是它们在 20 世纪 50、60 甚至 70 年代很常见。
 
-#### ⁷ Albeit indirectly.
+#### <sup>7</sup><a name="footnote-7"></a> Albeit indirectly.
 
 > 尽管这是间接的。
