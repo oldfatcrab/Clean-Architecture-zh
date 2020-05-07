@@ -431,32 +431,36 @@ What is OO? There are many opinions and many answers to this question. To the so
 
 > 面向对象编程到底是什么？业界在这个问题上存在着很多不同的说法和意见。然而对一个软件架构师来说，其含义应该是非常明确的：面向对象编程就是以对象为手段来对源代码中的依赖关系进行控制的能力，这种能力让软件架构师可以构建出某种插件式架构，让高层策略性组件与底层实现性组件相分离，底层组件可必编译成插件，实现独立于高层组件的开发和部署。
 
+<a name="footnote-1">&nbsp;</a>
+
+<br />
+
 ---
 
-#### <sup>1</sup><a name="footnote-1"></a> The C++ compiler needs to know the size of the instances of each class.
+#### <sup>1</sup><a name="footnote-2"></a> The C++ compiler needs to know the size of the instances of each class.
 
 > C++ 编译器需要知道不同类的实例需要占用的空间。
 
-#### <sup>2</sup><a name="footnote-2"></a> For example, Smalltalk, Python, JavaScript, Lua, and Ruby.
+#### <sup>2</sup><a name="footnote-3"></a> For example, Smalltalk, Python, JavaScript, Lua, and Ruby.
 
 > 比如说：Smalltalk、Python、JavaScript、Lua 和 Ruby。
 
-#### <sup>3</sup><a name="footnote-3"></a> Not just C programmers: Most languages of that era had the capability to masquerade one data structure as another
+#### <sup>3</sup><a name="footnote-4"></a> Not just C programmers: Most languages of that era had the capability to masquerade one data structure as another
 
 > 其实不光是 C 程序员：那个时代的大多数语言都能够将一种数据结构伪装成另一种数据结构。
 
-#### <sup>4</sup><a name="footnote-4"></a> Indeed it still is.
+#### <sup>4</sup><a name="footnote-5"></a> Indeed it still is.
 
 > 而且现在也很常见。
 
-#### <sup>5</sup><a name="footnote-5"></a> UNIX system vary; this is just an example
+#### <sup>5</sup><a name="footnote-6"></a> UNIX system vary; this is just an example
 
 > 每个 UNIX 系统不尽相同，这里只是举个例子。
 
-#### <sup>6</sup><a name="footnote-6"></a> Punched cards - IBM Hollerith cards, 80 columns wide. I'm sure many of you have never even seen one of these, but they were commonplace in the 1950s, 1960s, and even 1970s.
+#### <sup>6</sup><a name="footnote-7"></a> Punched cards - IBM Hollerith cards, 80 columns wide. I'm sure many of you have never even seen one of these, but they were commonplace in the 1950s, 1960s, and even 1970s.
 
 > 一种叫 IBM Hollerith 的卡片，80 列宽。我敢说你们中的许多人没有见过这种东西，但是它们在 20 世纪 50、60 甚至 70 年代很常见。
 
-#### <sup>7</sup><a name="footnote-7"></a> Albeit indirectly.
+#### <sup>7</sup> Albeit indirectly.
 
 > 尽管这是间接的。
