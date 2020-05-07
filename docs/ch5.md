@@ -433,7 +433,7 @@ What is OO? There are many opinions and many answers to this question. To the so
 
 ---
 
-#### ¹ The C++ compiler needs to know the size of the instances of each class.
+#### <sup>1</sup> The C++ compiler needs to know the size of the instances of each class.
 
 > C++ 编译器需要知道不同类的实例需要占用的空间。
 
